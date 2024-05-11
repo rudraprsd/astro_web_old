@@ -42,7 +42,7 @@ source ~/.venv/venv_name/bin/activate
 ```
 Now, you can see a venv_name either right side or left side of your terminal. It is the indication of successfull activation of venv.
 
-- To deactivate the venv, simply
+- To deactivate the venv, simply (in any directory)
 ```bash
 deactivate
-```, in any directory.
+```
