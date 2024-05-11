@@ -1,0 +1,11 @@
+{
+	"bash code block": {
+		"prefix": "bash",
+		"body": [
+		  "```bash",
+		  "",
+		  "```"
+		],
+		"description": "bash code block"
+	  },
+}
