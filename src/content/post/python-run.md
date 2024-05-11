@@ -18,31 +18,31 @@ In Linux, Python packages from external sources might clash with existing system
 **Steps**
 
 - Go to your home directory. 
-'''bash
+```bash
 cd ~
-'''
+```
 
 - create a new directory named .venv and go there 
-'''bash
+```bash
 mkdir .venv
 cd .venv
-'''
+```
 
 - create a venv
-'''bash
+```bash
 python3 -m venv venv_name
-'''
+```
 It will create a directory with the name of "venv". You can keep any name of your choice. It is better to keep name related to your project. 
 
 - To activate the venv
 
     Everytime you run a python program, you need to activate the specific venv. For that stay in your project directory. 
-'''bash
+```bash
 source ~/.venv/venv_name/bin/activate
-'''
+```
 Now, you can see a venv_name either right side or left side of your terminal. It is the indication of successfull activation of venv.
 
 - To deactivate the venv, simply
-'''bash
+```bash
 deactivate
-''', in any directory.
+```, in any directory.
