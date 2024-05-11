@@ -1,6 +1,6 @@
 ---
 title: "Install package in Ubuntu/Debian systems"
-description: "Installation methods"
+description: "There are various installation methods to install a package in Ubuntu/Debian based systems"
 publishDate: "11 May 2024"
 # updatedDate: 22 Jan 2024
 tags: ["linux"]

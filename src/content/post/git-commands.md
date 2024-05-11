@@ -1,6 +1,6 @@
 ---
 title: "git commands"
-description: "Important daily used git commands"
+description: "This post contains important git commands which are in daily use"
 publishDate: "11 May 2024"
 # updatedDate: 22 Jan 2024
 tags: ["git"]

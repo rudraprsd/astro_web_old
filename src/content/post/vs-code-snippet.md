@@ -1,6 +1,6 @@
 ---
 title: "Create VS Code snippet"
-description: "Use VSCode snippet to improve your productivity"
+description: "Use VSCode snippet while coding to improve your productivity"
 publishDate: "11 May 2024"
 # updatedDate: 22 Jan 2024
 tags: ["coding", "vscode"]
