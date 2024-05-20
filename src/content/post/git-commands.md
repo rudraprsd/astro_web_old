@@ -27,7 +27,7 @@ git add filename
 git add .
 ```
 
-- To unstage. 
+- To unstage.
 ```bash
 git restore --staged filename
 ```
@@ -38,7 +38,7 @@ each commit has unique id for identification.
 git commit -m "message"
 ```
 
-- To go back to specific commit  dont forget to put . at last, otherwise it will give you a detached head. 
+- To go back to specific commit  dont forget to put . at last, otherwise it will give you a detached head.
 ```bash
 git checkout commitid .
 ```
@@ -104,7 +104,10 @@ git remote add origin ssh_or_https_id_of_the_repo
 ```bash
 git remote -v
 ```
-
+- To delete or remove the remote repo. (considering origin is the name of remote repo)
+```bash
+git remote rm origin
+```
 - To clone a repo
 ```bash
 git clone ssh_or_https_of_repo
@@ -126,7 +129,7 @@ git pull origin branchname
 git push origin master
 ```
 
-- To know the commit id is present in which branch 
+- To know the commit id is present in which branch
 ```bash
 git branch --contains commitid
 ```
@@ -193,7 +196,7 @@ git push origin localbranch:remotebranch
 git show --name-only commit-hash
 ```
 
-**NOTE**: 
+**NOTE**:
 - Only the files you add to staging area only those will be commited. Hence, you can commit different files in different branches.
 
 - Sometimes you will see (END) generally in git log, and no command will work, that time press q or z or Ctrl+z. to terminate the process. It is bcz that is opened in scrollable terminal or limit window, i.e. in small window. to avoid this you can maximize the window. very Important.
