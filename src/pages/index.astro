@@ -8,23 +8,15 @@ const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
-// const cactusTech: { desc: string; href: string; title: string }[] = [
-// 	{
-// 		desc: "Build fast websites, faster.",
-// 		href: "https://astro.build",
-// 		title: "Astro",
-// 	},
-// 	{
-// 		desc: "Rapidly build modern websites without ever leaving your HTML.",
-// 		href: "https://tailwindcss.com",
-// 		title: "Tailwind CSS",
-// 	},
-// 	{
-// 		desc: "Simple and easy-to-use markup language.",
-// 		href: "https://www.markdownguide.org/",
-// 		title: "Markdown",
-// 	},
-// ];
+ const cactusTech: { desc: string; href: string; title: string }[] = [
+ 	{
+ 		desc: "Those who can't code become influencers.",
+ 		href: "",
+ 		title: "",
+ 	}
+
+
+ ];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -47,8 +39,8 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			}
 		</ul>
 	</section>
-	<!-- <section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
+	<section class="mt-16">
+		<h2 class="title mb-4 text-xl"></h2>
 		<dl class="space-y-4">
 			{
 				cactusTech.map(({ desc, href, title }) => (
@@ -66,5 +58,5 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 				))
 			}
 		</dl>
-	</section> -->
+	</section>
 </PageLayout>
