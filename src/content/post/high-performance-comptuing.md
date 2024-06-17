@@ -8,4 +8,4 @@ tags: ["git"]
 ---
 
 Coming Soon !
-${tex`$$\left.\frac{dy}{dx}\right|_{x=1}$$`}
+${tex`\left.\frac{dy}{dx}\right|_{x=1}`}
