@@ -8,4 +8,4 @@ tags: ["git"]
 ---
 
 Coming Soon !
-${tex`\frac{1}{x^2-1}`}
+$\frac{1}{x^2-1}$
