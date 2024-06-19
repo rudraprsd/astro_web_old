@@ -1,6 +1,6 @@
 // astro.config.mjs
 
-import { defineConfig } from 'astro';
+import { defineConfig } from 'astro/config';
 
 // Import remark-math and rehype-katex plugins
 import remarkMath from 'remark-math';
