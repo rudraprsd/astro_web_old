@@ -1,4 +1,4 @@
-import * as fs from "node:fs";
+// import * as fs from "node:fs";
 import type { WebmentionsFeed, WebmentionsCache, WebmentionsChildren } from "@/types";
 
 const DOMAIN = import.meta.env.SITE;
@@ -8,6 +8,16 @@ const filePath = `${CACHE_DIR}/webmentions.json`;
 const validWebmentionTypes = ["like-of", "mention-of", "in-reply-to"];
 
 const hostName = new URL(DOMAIN).hostname;
+
+let fs;
+if (typeof window === 'undefined') {
+  fs = require('node:fs');
+  const { existsSync, mkdirSync, writeFileSync, readFileSync } = fs;
+  // Your code that uses fs here
+} else {
+  // Handle the case when running in the browser
+}
+
 
 // Calls webmention.io api.
 async function fetchWebmentions(timeFrom: string | null, perPage = 1000) {
@@ -64,19 +74,22 @@ function writeToCache(data: WebmentionsCache) {
 	const fileContent = JSON.stringify(data, null, 2);
 
 	// create cache folder if it doesn't exist already
-	if (!fs.existsSync(CACHE_DIR)) {
+	if (fs && !fs.existsSync(CACHE_DIR)) {
 		fs.mkdirSync(CACHE_DIR);
 	}
 
 	// write data to cache json file
-	fs.writeFile(filePath, fileContent, (err) => {
-		if (err) throw err;
-		console.log(`Webmentions saved to ${filePath}`);
-	});
+  if (fs) {
+
+	  fs.writeFile(filePath, fileContent, (err) => {
+		  if (err) throw err;
+		  console.log(`Webmentions saved to ${filePath}`);
+	  });
+  }
 }
 
 function getFromCache(): WebmentionsCache {
-	if (fs.existsSync(filePath)) {
+	if (fs && fs.existsSync(filePath)) {
 		const data = fs.readFileSync(filePath, "utf-8");
 		return JSON.parse(data);
 	}
