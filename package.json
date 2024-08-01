@@ -28,7 +28,7 @@
 		"sharp": "^0.33.2"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.5.10",
+		"@astrojs/check": "^0.9.1",
 		"@eslint/config-array": "^0.16.0",
 		"@eslint/object-schema": "^2.1.4",
 		"@iconify-json/mdi": "^1.1.66",
